@@ -60,6 +60,10 @@
   background-color: #fff;
 }
 
+.card + .card {
+  margin-block-start: 50px;
+}
+
 .card__title {
   padding: 4px 10px;
   font-size: 18px;
