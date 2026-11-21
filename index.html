@@ -434,6 +434,8 @@
       <button
         class="button save-button"
         type="button"
+        commandfor="save-dialog"
+        command="show-modal"
         aria-haspopup="dialog"
         aria-controls="save-dialog"
       >
@@ -444,15 +446,13 @@
       </button>
     </main>
     <dialog class="save-dialog" id="save-dialog" aria-labelledby="save-dialog-text">
-      <div class="save-dialog__content">
-        <svg class="save-dialog__icon" aria-hidden="true">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <p class="save-dialog__text" id="save-dialog-text">
-          Вставьте дискету, чтобы продолжить
-        </p>
-      </div>
-      <form method="dialog">
+      <svg class="save-dialog__icon" aria-hidden="true">
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <p class="save-dialog__text" id="save-dialog-text">
+        Вставьте дискету, чтобы продолжить
+      </p>
+      <form class="save-dialog__form" method="dialog">
         <button class="button save-dialog__button" type="submit">
           <span class="button__text">ОК</span>
         </button>
