@@ -225,3 +225,21 @@
   inline-size: 100%;
   text-transform: uppercase;
 }
+
+@media (width <= 375px) {
+  .save-button {
+    flex-direction: column;
+    padding-block: 15px;
+  }
+
+  .save-button__icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .save-dialog {
+    inline-size: 341px;
+    max-inline-size: calc(100vw - 34px);
+    padding-inline: 38px;
+  }
+}
