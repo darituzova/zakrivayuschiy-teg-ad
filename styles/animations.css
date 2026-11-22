@@ -34,6 +34,16 @@
   transition-delay: 0.05s;
 }
 
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
 .sparks {
   opacity: 0;
 }
