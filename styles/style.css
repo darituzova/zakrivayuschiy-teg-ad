@@ -172,14 +172,24 @@
   flex-shrink: 0;
   inline-size: 39px;
   block-size: 38px;
-  border: none;
+  border: 2px solid transparent;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--accent-color);
 }
 
 .like-icon {
   display: block;
+  flex-shrink: 0;
   inline-size: 39px;
   block-size: 36px;
 }
