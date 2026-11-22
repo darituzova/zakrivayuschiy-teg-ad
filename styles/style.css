@@ -185,18 +185,48 @@
 }
 
 .button {
+  position: relative;
+  isolation: isolate;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   min-block-size: 38px;
-  border: 2px solid #000;
+  border: 2px solid var(--accent-color);
   padding: 10px;
   background-color: #fff;
   font-family: var(--font-accent), fantasy;
   font-size: 14px;
   line-height: 0.9;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text,
+.save-button__icon {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 .card__like-button {

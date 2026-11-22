@@ -6,6 +6,8 @@
   --font-weight-main: 400;
   --font-weight-heading: 700;
   --label-stroke-color: #fff;
+  --accent-color: #000;
+  --button-text-color: #fff;
   --content-width: clamp(23.4375rem, 16.1972rem + 30.892vw, 44rem);
   --background-image:
     repeating-linear-gradient(
