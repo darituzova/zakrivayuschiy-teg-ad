@@ -289,11 +289,8 @@
   text-transform: uppercase;
 }
 
-.save-dialog__form {
-  grid-column: 1 / -1;
-}
-
 .save-dialog__button {
+  grid-column: 1 / -1;
   inline-size: 100%;
   text-transform: uppercase;
 }
