@@ -8,6 +8,8 @@
   --label-stroke-color: #fff;
   --accent-color: #000;
   --button-text-color: #fff;
+  --contour-color: #000;
+  --animation-fill-color: #f00;
   --content-width: clamp(23.4375rem, 16.1972rem + 30.892vw, 44rem);
   --background-image:
     repeating-linear-gradient(
