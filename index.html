@@ -483,22 +483,22 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog class="save-dialog" id="save-dialog" aria-labelledby="save-dialog-text">
+        <svg class="save-dialog__icon" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="save-dialog__text" id="save-dialog-text">
+          Вставьте дискету, чтобы продолжить
+        </p>
+        <button
+          class="button save-dialog__button"
+          type="button"
+          onclick="document.getElementById('save-dialog').close()"
+        >
+          <span class="button__text">ОК</span>
+        </button>
+      </dialog>
     </main>
-    <dialog class="save-dialog" id="save-dialog" aria-labelledby="save-dialog-text">
-      <svg class="save-dialog__icon" aria-hidden="true">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <p class="save-dialog__text" id="save-dialog-text">
-        Вставьте дискету, чтобы продолжить
-      </p>
-      <button
-        class="button save-dialog__button"
-        type="button"
-        onclick="document.getElementById('save-dialog').close()"
-      >
-        <span class="button__text">ОК</span>
-      </button>
-    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
